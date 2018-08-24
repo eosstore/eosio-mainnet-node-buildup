@@ -3,7 +3,7 @@ Description=root
 
 [Service]
 User=root
-ExecStart=/bin/bash -c "/usr/local/eosio/bin/nodeos --config-dir /root/eosio-node/eos-config -d /root/eosio-node/eos-data > /root/eosio-node/eosio.log  2>&1"
+ExecStart=/bin/bash -c "/usr/local/eosio/bin/nodeos --config-dir /root/eosio-mainnet-node-buildup/eosio-node/eos-config -d /root/eosio-mainnet-node-buildup/eosio-node/eos-data > /root/eosio-mainnet-node-buildup/eosio-node/eosio.log  2>&1"
 Restart=always
 
 [Install]
