@@ -40,6 +40,8 @@ git clone https://github.com/eosstore/eosio-mainnet-node-buildup.git
 Systemctl start eosio.service
 ```
 
+注意：代码下载路径默认是/root，当前的路径是/root/eosio-mainnet-node-buildup/eosio-node/,如果路径不正确，需要自己修改eosio.service中的nodeos启动路径。
+
 ##5.查看log##
 ```
 tail -f eosio.log
