@@ -1,9 +1,8 @@
-cd eos-data/
 
-wget $1 
+wget $1
 
-ls > data-name
+data = $1
+data-name = ${data##*/} 
 
-echo "data-name : $data-name"
-
-tar zxvf $data-name 
+echo "data-name:${data-name}"
+tar zxvf ${##*/} ./eos-data 
